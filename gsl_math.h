@@ -117,6 +117,7 @@ __BEGIN_DECLS
 
 /* Return nonzero if x is a real number, i.e. non NaN or infinite. */
 #define GSL_IS_REAL(x) (gsl_finite(x))
+#define gsl_finite(x) (isfinite(x))
 
 /* Definition of an arbitrary function with parameters */
 
